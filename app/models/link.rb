@@ -1,4 +1,7 @@
 class Link < ActiveRecord::Base
+  validates :title, presence: { message: "Please enter title" }
+  validates :given_url, presence: { message: "Please enter URL" }
+
   after_create :generate_short_url
   before_create :add_protocol_to_given_url
   # Generate short url after creating link object
