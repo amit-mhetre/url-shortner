@@ -4,6 +4,7 @@ class LinksController < ApplicationController
   # GET /links
   # GET /links.json
   def index
+    # Get list of links in descending order of clicks
     @links = Link.all.order(clicks: :desc)
   end
 
@@ -62,6 +63,7 @@ class LinksController < ApplicationController
     end
   end
 
+  # Action which redirects to main url using short url
   def go_to_site
     @link = Link.find_by(shorten_url: params[:slug])
     if redirect_to @link.given_url
