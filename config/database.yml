@@ -26,7 +26,12 @@ test:
   password: <%=Rails.application.secrets.mysql['password']%>
 
 production:
-  adapter: sqlite3
-  database: db/url_shortner_prod
+  adapter: postgresql
+  encoding: utf8
+  database: <%=ENV['DB_NAME']%>
   pool: 5
+  username: <%=ENV['DB_USERNAME']%>
+  password: <%=ENV['DB_PASSWORD']%>
+  host: <%=ENV['DB_HOST']%>
   timeout: 5000
+  port: 5432
