@@ -76,4 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # TODO: Change below URL once production env is setup
+  BASE_URL = 'http://localhost:3000/'
 end
