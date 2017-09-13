@@ -78,5 +78,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # TODO: Change below URL once production env is setup
-  BASE_URL = 'http://localhost:3000/'
+  BASE_URL = 'https://fast-garden-74024.herokuapp.com/'
 end
