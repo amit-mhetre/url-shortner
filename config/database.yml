@@ -26,7 +26,7 @@ test:
   password: <%=Rails.application.secrets.mysql['password']%>
 
 production:
-  <<: *default
-  database: url_shortner_prod
-  username: <%=Rails.application.secrets.mysql['username']%>
-  password: <%=Rails.application.secrets.mysql['password']%>
+  adapter: sqlite3
+  database: db/url_shortner_prod
+  pool: 5
+  timeout: 5000

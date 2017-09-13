@@ -35,6 +35,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  # Added mysql as a database
+  gem 'mysql2', '~> 0.3.16'
 end
 
 group :development do
@@ -45,8 +48,9 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  gem 'sqlite3'
+end
+
 # Include bootstrap for front-end
 gem 'bootstrap', '~> 4.0.0.beta'
-
-# Added mysql as a database
-gem 'mysql2', '~> 0.3.16'
