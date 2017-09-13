@@ -1,32 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Links</h1>
+<h1>Total Links</h1>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Given url</th>
-      <th>Shorten url</th>
-      <th>Clicks</th>
-      <th colspan="2"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @links.each do |link| %>
-      <tr>
-        <td><%= link.title %></td>
-        <td><%= link.given_url %></td>
-        <td><%= link_to BASE_URL + link.shorten_url, BASE_URL + link.shorten_url %></td>
-        <td><%= link.clicks %></td>
-        <td><%= link_to 'Edit', edit_link_path(link) %></td>
-        <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<%= render :partial => 'links/links' %>
 
 <br>
 
-<%= link_to 'New Link', new_link_path %>
+<%= link_to 'New Link', new_link_path %> |
+<%= link_to 'Top links', root_path %>
