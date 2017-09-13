@@ -3,6 +3,9 @@
 <h1>Total Links</h1>
 
 <%= render :partial => 'links/links' %>
+<div class="digg_pagination">
+  <%= will_paginate @links %>
+</div>
 
 <br>
 

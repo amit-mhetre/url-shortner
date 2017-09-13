@@ -5,7 +5,7 @@ class LinksController < ApplicationController
   # GET /links.json
   def index
     # Get list of links in descending order of clicks
-    @links = Link.all.order(clicks: :desc)
+    @links = Link.all.paginate(:page => params[:page]).order(clicks: :desc)
   end
 
   # GET /links/1

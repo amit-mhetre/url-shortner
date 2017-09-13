@@ -55,3 +55,6 @@ end
 
 # Include bootstrap for front-end
 gem 'bootstrap', '~> 4.0.0.beta'
+
+# Paginate list
+gem 'will_paginate', '~> 3.1.0'
