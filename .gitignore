@@ -17,6 +17,6 @@
 /tmp
 
 # Ignore secrets.yml which holds important credentials
-config/secrets.yml
+#config/secrets.yml
 
 test/
