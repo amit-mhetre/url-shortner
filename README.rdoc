@@ -1,24 +1,23 @@
-Url Shortner
-=========
+== Url Shortner
+
 
 Url shortner is a service that takes long URLs and shorten them into fewer characters to make a link that is easier to share, email etc.
 Users can directly create shorten url without any authentication using form provided in web interface.
 
-Requirements
-------------
+== Requirements
 
-### Ruby and Rails
+
+=== Ruby and Rails
 
 Url Shortner requires Ruby version **2.2.1** and Rails version **4.2.6**
 
-### Database
+=== Database
 
 Mysql
 
-Usage
-------------
+== Usage
 
-### Starting a local development server
+=== Starting a local development server
 
 Clone application
 
@@ -41,4 +40,4 @@ Start application
 
     $ rails server
 
-You can access url shortner using **(http://localhost:3000)**
+You can access url shortner using **http://localhost:3000**
