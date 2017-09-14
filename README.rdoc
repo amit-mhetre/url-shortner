@@ -1,28 +1,44 @@
-== README
+Url Shortner
+=========
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Url shortner is a service that takes long URLs and shorten them into fewer characters to make a link that is easier to share, email etc.
+Users can directly create shorten url without any authentication using form provided in web interface.
 
-Things you may want to cover:
+Requirements
+------------
 
-* Ruby version
+### Ruby and Rails
 
-* System dependencies
+Url Shortner requires Ruby version **2.2.1** and Rails version **4.2.6**
 
-* Configuration
+### Database
 
-* Database creation
+Mysql
 
-* Database initialization
+Usage
+------------
 
-* How to run the test suite
+### Starting a local development server
 
-* Services (job queues, cache servers, search engines, etc.)
+Clone application
 
-* Deployment instructions
+    $ git clone https://github.com/amit-mhetre/url-shortner.git
 
-* ...
+Go to projects directory
 
+    $ cd url-shortner
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Run bundle installer
+
+    $ bundle install
+
+Create database and run migrations
+
+    $ rake db:create
+    $ rake db:migrate
+
+Start application
+
+    $ rails server
+
+You can access url shortner using **(http://localhost:3000)**
